@@ -1,0 +1,12 @@
+C:\Users\paulu\source\repos\Ploozer\Ploozer\bin\Debug\Ploozer.exe.config
+C:\Users\paulu\source\repos\Ploozer\Ploozer\bin\Debug\Ploozer.exe
+C:\Users\paulu\source\repos\Ploozer\Ploozer\bin\Debug\Ploozer.pdb
+C:\Users\paulu\source\repos\Ploozer\Ploozer\obj\Debug\Ploozer.Properties.Resources.resources
+C:\Users\paulu\source\repos\Ploozer\Ploozer\obj\Debug\Ploozer.csproj.GenerateResource.cache
+C:\Users\paulu\source\repos\Ploozer\Ploozer\obj\Debug\Ploozer.csproj.CoreCompileInputs.cache
+C:\Users\paulu\source\repos\Ploozer\Ploozer\obj\Debug\Ploozer.exe
+C:\Users\paulu\source\repos\Ploozer\Ploozer\obj\Debug\Ploozer.pdb
+C:\Users\paulu\source\repos\Ploozer\Ploozer\obj\Debug\Ploozer.Form3.resources
+C:\Users\paulu\source\repos\Ploozer\Ploozer\obj\Debug\Ploozer.csprojAssemblyReference.cache
+C:\Users\paulu\source\repos\Ploozer\Ploozer\obj\Debug\Ploozer.Form2.resources
+C:\Users\paulu\source\repos\Ploozer\Ploozer\obj\Debug\Ploozer.Form1.resources
