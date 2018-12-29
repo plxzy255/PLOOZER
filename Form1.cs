@@ -66,9 +66,10 @@ namespace Ploozer
             cmd.StartInfo.FileName = "cmd.exe";
             cmd.StartInfo.RedirectStandardInput = true;
             cmd.StartInfo.RedirectStandardOutput = true;
-            cmd.StartInfo.CreateNoWindow = true;
+            cmd.StartInfo.CreateNoWindow = false;
             cmd.StartInfo.UseShellExecute = false;
             cmd.Start();
+            cmd.StandardOutput.WriteLine("Resetting...");
 
             cmd.StandardInput.WriteLine("@echo off");
             cmd.StandardInput.WriteLine("ipconfig /release");
