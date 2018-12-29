@@ -10,3 +10,4 @@ C:\Users\paulu\source\repos\Ploozer\Ploozer\obj\Debug\Ploozer.Form3.resources
 C:\Users\paulu\source\repos\Ploozer\Ploozer\obj\Debug\Ploozer.csprojAssemblyReference.cache
 C:\Users\paulu\source\repos\Ploozer\Ploozer\obj\Debug\Ploozer.Form2.resources
 C:\Users\paulu\source\repos\Ploozer\Ploozer\obj\Debug\Ploozer.Form1.resources
+C:\Users\paulu\source\repos\Ploozer\Ploozer\obj\Debug\Ploozer.Form4.resources

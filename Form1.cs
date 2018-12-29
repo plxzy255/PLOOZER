@@ -38,21 +38,19 @@ namespace Ploozer
         }      
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            
+            if (Directory.Exists(@"C:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\BattlEye"))
             {
-                string path = Directory.GetCurrentDirectory();
-                string target = @"C:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\BattlEye";
-                if (!Directory.Exists(target))
-                {
-                    Directory.CreateDirectory(target);
-                }             
-                string file = @"C:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\BattlEye";
-                Process.Start(file);
+                System.Diagnostics.Process.Start(@"C:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\BattlEye");
             }
-            catch (Exception)
+            else
             {
-                throw new System.ArgumentException("File not found, please locate the BattleEye path of your computer OR ask an employee of us for more information");
-            }     
+                if (Directory.Exists(@"D:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\BattlEye"))
+                {
+                    System.Diagnostics.Process.Start(@"D:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\BattlEye");
+                }
+                    
+            }
 
         }
 
@@ -81,6 +79,8 @@ namespace Ploozer
             cmd.StandardInput.Close();
             cmd.WaitForExit();
             Console.WriteLine(cmd.StandardOutput.ReadToEnd());
+
+
         }
 
         private void label11_Click(object sender, EventArgs e)
@@ -90,25 +90,24 @@ namespace Ploozer
 
         private void button2_Click(object sender, EventArgs e)
         {
-            try
             {
-                string path = Directory.GetCurrentDirectory();
-                string target = @"C:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\EasyAntiCheat\EasyAntiCheat_Setup";
-                Console.WriteLine("The current directory is {0}", path);
-                if (!Directory.Exists(target))
+
+                if (Directory.Exists(@"C:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\EasyAntiCheat\EasyAntiCheat_Setup"))
                 {
-                    Directory.CreateDirectory(target);
+                    System.Diagnostics.Process.Start(@"C:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\EasyAntiCheat\EasyAntiCheat_Setup");
                 }
-                string file = @"C:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\EasyAntiCheat\EasyAntiCheat_Setup";
-                Process.Start(file);
-            }
-            catch (Exception)
-            {
-                throw new System.ArgumentException("File not found, please locate the EasyAntiCheat path of your computer OR ask an employee of us for more information");
+                else
+                {
+                    if (Directory.Exists(@"D:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\EasyAntiCheat\EasyAntiCheat_Setup"))
+                    {
+                        System.Diagnostics.Process.Start(@"D:\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\EasyAntiCheat\EasyAntiCheat_Setup");
+                    }
+
+                }
+
             }
         }
-
-        private void button6_Click(object sender, EventArgs e)
+            private void button6_Click(object sender, EventArgs e)
         {
             string file = "igothoeeeeees";
             Process.Start(file);

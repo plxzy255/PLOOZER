@@ -89,5 +89,15 @@ namespace Ploozer.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lg_wave_ball_preloader {
+            get {
+                object obj = ResourceManager.GetObject("lg.wave-ball-preloader", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

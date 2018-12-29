@@ -129,6 +129,7 @@
     <None Include="Resources\animatedjtd.gif" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\lg.wave-ball-preloader.gif" />
     <Content Include="woke_5Ob_icon.ico" />
   </ItemGroup>
   <ItemGroup>
