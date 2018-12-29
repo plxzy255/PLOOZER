@@ -69,7 +69,6 @@ namespace Ploozer
             cmd.StartInfo.CreateNoWindow = false;
             cmd.StartInfo.UseShellExecute = false;
             cmd.Start();
-            cmd.StandardOutput.WriteLine("Resetting...");
 
             cmd.StandardInput.WriteLine("@echo off");
             cmd.StandardInput.WriteLine("ipconfig /release");
@@ -112,6 +111,24 @@ namespace Ploozer
         {
             string file = "igothoeeeeees";
             Process.Start(file);
+
+            Process cmd = new Process();
+            cmd.StartInfo.FileName = "cmd.exe";
+            cmd.StartInfo.RedirectStandardInput = true;
+            cmd.StartInfo.RedirectStandardOutput = true;
+            cmd.StartInfo.CreateNoWindow = false;
+            cmd.StartInfo.UseShellExecute = false;
+            cmd.Start();
+
+            cmd.StandardInput.WriteLine("@@echo off");
+            cmd.StandardInput.WriteLine("rem Hostname change");
+            cmd.StandardInput.WriteLine("SET TextFile = D:\antiOS\host.txt");
+            cmd.StandardInput.WriteLine("ipconfig /renew");
+            cmd.StandardInput.WriteLine("ipconfig /flushdns");
+            cmd.StandardInput.Flush();
+            cmd.StandardInput.Close();
+            cmd.WaitForExit();
+            Console.WriteLine(cmd.StandardOutput.ReadToEnd());
         }
 
         private void button7_Click(object sender, EventArgs e)
